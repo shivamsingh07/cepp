@@ -1,0 +1,30 @@
+//Program to find three elements in an array such that their equal to entered key
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+    int a[50],n,i,j,k,num1,num2,num3,key;
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    scanf("%d",&a[i]);
+    printf("enter key");
+    scanf("%d",&key);
+    for(i=0;i<n-2;i++)
+    {
+        for(j=i+1;j<n-1;j++)
+        {
+            for(k=j+1;k<n;k++)
+            {
+                if(a[i]+a[j]+a[k]==key)
+                {
+                    num1=a[i];
+                    num2=a[j];
+                    num3=a[k];
+                    }
+                }
+            }
+     }
+     printf("numbers are %d %d %d ",num1,num2,num3);
+     getch();
+     return 0;
+    }
