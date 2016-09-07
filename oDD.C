@@ -1,0 +1,15 @@
+//Program to find no occuring odd times in an array
+#include<stdio.h>
+int main()
+{
+	int a[50],i,n,num;
+	scanf("%d,&n");
+	for(i=0;i<n;i++)
+	scanf("%d",&a[i]);
+	num=a[0];
+	for(i=0;i<n-1;i++)
+	num=num^a[i+1];
+	printf("number occuring odd  no of times :- %d",num);
+	getch();
+	return 0;
+}
